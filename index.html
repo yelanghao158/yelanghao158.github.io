@@ -1,91 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="index.appcache">
 
 <head>
     <meta charset="UTF-8">
-    <meta name='viewport' content='width=device, initial-scale=1.0'>
-    <title>个人简历</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">皂罗袍</h1>
-        </div>
-    </header>
-    <div class="content">
-        <div class="section section-glass">
-            <div class="container">
-                <div class="text-wrap">
-                    <h2>叶浪浩</h2>
+    <div class="main_wrapper">
+        <!-- header start -->
+        <header>
+            <nav>
+                <div class="logo"><a href="#">皂罗袍</a></div>
+                <ul>
+                    <li>
+                        <a class="fa fa-link" href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="banner">
+                <div class="inner">
+                    <h1>叶浪浩</h1>
+                    </br>
                     <p>15年毕业于广东水利电力学院，从事web前端开发。</p>
-                    <a href="#scction-gray">更多</a>
-                </div>
-            </div>
-        </div>
-        <div class="section section-blue">
-            <div class="container">
-                <h2>你很有想法跟我学唱戏吧</h2>
-                <div class="img-box">
-                    <img src="images/img-box-1.jpg" alt="">
-                    <img src="images/img-box-2.jpg" alt="">
-                    <img src="images/img-box-3.jpg" alt="">
-                    <img src="images/1.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="section section-gray" id="scction-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 left">
-                        <img src="images/section-1.jpg" alt="">
+                    <div class="more">
+                        <p><a href="#a1">更多</a></p>
                     </div>
-                    <div class="col-xs-6 right">
-                        <h2>个人简介</h2>
+                </div>
+            </div>
+        </header>
+        <!-- container start -->
+        <div id="container">
+            
+            <section class="green_section">
+                <div class="wrapper">
+                    <div>
+                        <h2>你很有想法跟我学唱戏吧</h2>
+                    </div>
+                    <div id="mainContent">
+                        <div class="img-box floorMain">
+                            <img class="pic pic1" _lazysrc="images/img-box-1.jpg" alt="beauty">
+                            <img class="pic pic2" _lazysrc="images/img-box-2.jpg" alt="beauty">
+                            <img class="pic pic3" _lazysrc="images/img-box-3.jpg" alt="beauty">
+                            <img class="pic pic4" _lazysrc="images/1.jpg" alt="beauty">
+                            <img class="pic pic6" _lazysrc="images/img-box-6.jpg" alt="beauty">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gray_section" id="a1">
+                <div class="article_preview">
+                    <div class="img_section">
+                        <img src="images/section-1.jpg">
+                    </div>
+                    <div class="text_section">
+                    
+                         <h2>个人简介</h2>
                         <p>姓名：叶浪浩 &nbsp;&nbsp; 出生日期：1994.2.14 &nbsp;&nbsp; 男</p>
                         <p>热衷与web前端，熟悉HTML5的特性，能够独立实现CSS3各种动画效果，了解移动端开发，hybirdApp开发;较注重用户体验，因此会经常浏览各类网站的交互并且吸收（比如图片压缩，预加载，使用webpack合并文件等）;</p>
                         <p>熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="section section-purple">
-            <div class="container">
-                <h2>专业技能</h2>
-                <ul>
-                    <li>
-                        <h3>H5</h3>
+            </section>
+            <section class="purple_section">
+                <div class="heading_wrapper">
+                    <h2>专业技能</h2>
+                </div>
+                <div class="card_group">
+                    <div class="card card_1">
+                        <h2>H5</h2>
                         <p>了解H5新特性，可以进行web页面，webApp与hybirdApp开发</p>
-                    </li>
-                    <li>
-                        <h3>CSS3</h3>
+                    </div>
+                    <div class="card card_2">
+                        <h2>CSS3</h2>
                         <p>熟练使用CCS3</p>
-                    </li>
-                    <li>
-                        <h3>JavScript</h3>
-                        <p>Javascript 扎实的Javascript基础，熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架
-                        </p>
-                    </li>
-                    <li>
-                        <h3>PHP</h3>
+                    </div>
+                    <div class="card card_3">
+                        <h2>Javascript</h2>
+                        <p>扎实的Javascript基础，熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架</p>
+                    </div>
+                    <div class="card card_4">
+                        <h2>PHP</h2>
                         <p>一定的后端基础，可以使用结构化查询语言进行后台控制</p>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <footer>
-        <div class="container">
+        <!-- footer start -->
+        <footer>
             <div class="copy">
-                皂罗袍 - 2016
+                &copy 皂罗袍 - 2016
             </div>
-        </div>
-    </footer>
-    <script src='js/CJL.0.1.min.js'></script>
-    <script src='js/LazyLoad.js'></script>
-    <script src='js/main.js'></script>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/CJL.0.1.min.js"></script>
+    <script type="text/javascript" src="js/LazyLoad.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
